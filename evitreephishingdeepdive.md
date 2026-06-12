@@ -148,7 +148,7 @@ The kit developer backdoor email appears in every deployment whose `pass.php` wa
 
 ### 4.4 Indicators of Static Page Rip (Not AiTM)
 
-Evitree is a static HTML/JavaScript capture of the Google Sign-In page with PHP backends appended. It's not an Adversary in the Middle proxy, and as far as I can tell, it cannot relay live sessions or bypass MFA.
+Evitree is a static HTML/JavaScript capture of the Google Sign-In page with PHP backends appended. It's not an Adversary in the Middle proxy, and as far as I can tell, it cannot proxy live sessions or bypass MFA.
 
 - **Empty nonce attributes:** All `<script>` tags carry `nonce=""`. Legitimate Google pages generate a unique nonce per request. Fixed empty nonces indicate a single captured static snapshot.
 - **Hardcoded `usi` timestamp:** The `usi` session identifier (`S-233362078:1741544750655901`) decodes to March 9, 2025. This value is static across all sessions on the kit.
