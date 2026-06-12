@@ -3,8 +3,6 @@
 **Date:** June 11, 2026  
 **Subject:** Credential-harvesting phishing campaign targeting Google account holders via fabricated Google Docs share notification  
 
-**Scope.** Personal investigation following receipt of a phishing email. Analysis used publicly accessible infrastructure and browser-level interaction where the kit required it. On `mesh*.vu` deployments, fake credentials were submitted after clearing Cloudflare challenges to progress through kit stages (including `pass.php`). No real account credentials were used. No attempts were made to access operator backend systems beyond what any visitor could reach.
-
 ---
 
 ## 1. I hate phishing.
